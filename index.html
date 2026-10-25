@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mori coffee | 日常の中に、少しだけ余白を。</title>
+  <meta name="description" content="mori coffee は、ていねいに焙煎したコーヒーと焼き菓子を楽しめる架空のカフェです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- ① ヘッダー -->
+  <header class="site-header" id="home">
+    <div class="site-header__inner">
+      <a class="logo" href="#home">mori coffee</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="visually-hidden">メニューを開く</span>
+      </button>
+      <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
+        <ul class="global-nav__list">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#access">ACCESS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ② メインビジュアル -->
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="photo hero__photo">
+        <img src="images/hero.png" alt="朝の光が差し込む、木のカウンターと観葉植物のある店内" width="1600" height="1000">
+      </figure>
+      <div class="hero__body container">
+        <h1 class="hero__title" id="hero-title">日常の中に、<br>少しだけ余白を。</h1>
+        <p class="hero__lead">一杯のコーヒーと、静かな時間。<br>mori coffee は、森の入り口のような小さなカフェです。</p>
+        <div class="hero__actions">
+          <a class="button button--light" href="#menu">メニューを見る</a>
+          <a class="button button--ghost" href="#access">店舗情報</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="split__text">
+          <h2 class="section-title" id="about-title">About<span class="section-title__ja">私たちについて</span></h2>
+          <p class="lead">急がなくていい場所を、街の中につくりたい。</p>
+          <p>mori coffee は、仕事や家事の合間にふっと息をつける場所として生まれました。窓の外の緑を眺めながら、温かい一杯をゆっくり味わってください。</p>
+          <p>コーヒー豆は、契約する小さな焙煎所から週に一度届きます。お菓子に使う小麦や卵、果物は、できるだけ近隣の生産者から仕入れています。</p>
+        </div>
+        <figure class="photo photo--tall split__photo">
+          <img src="images/about.png" alt="ハンドドリップでコーヒーを淹れている手元" width="800" height="1000" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ④ MENU -->
+    <section class="section section--beige" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <h2 class="section-title" id="menu-title">Menu<span class="section-title__ja">メニュー</span></h2>
+        <p class="section-note">価格はすべて税込です。</p>
+
+        <div class="menu-grid">
+          <article class="menu-group">
+            <h3 class="menu-group__title">コーヒー</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><div><h4 class="menu-item__name">ブレンド</h4><p class="menu-item__desc">ナッツのような香ばしさと、やさしい甘み。</p></div><p class="menu-item__price">¥550</p></li>
+              <li class="menu-item"><div><h4 class="menu-item__name">シングルオリジン</h4><p class="menu-item__desc">季節ごとに入れ替わる、日替わりの一杯。</p></div><p class="menu-item__price">¥650</p></li>
+              <li class="menu-item"><div><h4 class="menu-item__name">アイスコーヒー</h4><p class="menu-item__desc">水出しでじっくり。すっきりとした後味。</p></div><p class="menu-item__price">¥600</p></li>
+            </ul>
+          </article>
+
+          <article class="menu-group">
+            <h3 class="menu-group__title">カフェラテ</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><div><h4 class="menu-item__name">カフェラテ</h4><p class="menu-item__desc">深煎りのエスプレッソに、なめらかなミルク。</p></div><p class="menu-item__price">¥620</p></li>
+              <li class="menu-item"><div><h4 class="menu-item__name">きなこラテ</h4><p class="menu-item__desc">香ばしいきなこと黒蜜をのせて。</p></div><p class="menu-item__price">¥680</p></li>
+            </ul>
+          </article>
+
+          <article class="menu-group">
+            <h3 class="menu-group__title">季節のドリンク</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><div><h4 class="menu-item__name">栗のラテ</h4><p class="menu-item__desc">秋限定。栗のペーストを溶かした、ほっくり甘いラテ。</p></div><p class="menu-item__price">¥720</p></li>
+              <li class="menu-item"><div><h4 class="menu-item__name">ほうじ茶オレ</h4><p class="menu-item__desc">炒りたての茶葉をミルクでゆっくり煮出しました。</p></div><p class="menu-item__price">¥650</p></li>
+            </ul>
+          </article>
+
+          <article class="menu-group">
+            <h3 class="menu-group__title">ケーキ</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><div><h4 class="menu-item__name">バスクチーズケーキ</h4><p class="menu-item__desc">焼き込んだ表面と、とろりとした中心。</p></div><p class="menu-item__price">¥680</p></li>
+              <li class="menu-item"><div><h4 class="menu-item__name">抹茶のテリーヌ</h4><p class="menu-item__desc">ほろ苦い抹茶と、白チョコレートの組み合わせ。</p></div><p class="menu-item__price">¥700</p></li>
+            </ul>
+          </article>
+
+          <article class="menu-group">
+            <h3 class="menu-group__title">焼き菓子</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><div><h4 class="menu-item__name">塩バターサブレ</h4><p class="menu-item__desc">さくっと軽く、塩がほんのり。</p></div><p class="menu-item__price">¥220</p></li>
+              <li class="menu-item"><div><h4 class="menu-item__name">ナッツとドライフルーツのスコーン</h4><p class="menu-item__desc">毎朝焼きたて。数に限りがあります。</p></div><p class="menu-item__price">¥380</p></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑤ COMMITMENT -->
+    <section class="section" id="commitment" aria-labelledby="commitment-title">
+      <div class="container">
+        <h2 class="section-title" id="commitment-title">Commitment<span class="section-title__ja">こだわり</span></h2>
+        <div class="commitment-list">
+          <article class="commitment">
+            <h3 class="commitment__title">豆</h3>
+            <p>産地や精製方法の異なる豆を、浅煎りから深煎りまで取りそろえています。焙煎したてを週ごとに仕入れ、香りが高いうちにお出しします。</p>
+          </article>
+          <article class="commitment">
+            <h3 class="commitment__title">空間</h3>
+            <p>無垢の木のカウンターと、窓辺の観葉植物。席の間隔を広めにとり、一人でも、誰かとでも、落ち着いて過ごせる店内にしました。</p>
+          </article>
+          <article class="commitment">
+            <h3 class="commitment__title">素材</h3>
+            <p>お菓子は保存料を使わず、毎朝仕込みます。旬の果物や国産の小麦など、素材の味がわかるものを選んでいます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑥ GALLERY -->
+    <section class="section section--green" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 class="section-title" id="gallery-title">Gallery<span class="section-title__ja">店内の風景</span></h2>
+        <div class="gallery">
+          <figure class="photo gallery__item gallery__item--wide"><img src="images/gallery-1.png" alt="大きな窓から光が入る、店内の客席" width="1200" height="800" loading="lazy"></figure>
+          <figure class="photo gallery__item"><img src="images/gallery-2.png" alt="白いカップに注がれたカフェラテ" width="800" height="800" loading="lazy"></figure>
+          <figure class="photo gallery__item"><img src="images/gallery-3.png" alt="皿にのったバスクチーズケーキ" width="800" height="800" loading="lazy"></figure>
+          <figure class="photo gallery__item"><img src="images/gallery-4.png" alt="窓辺に並ぶ観葉植物" width="800" height="800" loading="lazy"></figure>
+          <figure class="photo gallery__item gallery__item--wide"><img src="images/gallery-5.png" alt="焼きたてのスコーンとサブレ" width="1200" height="800" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑦ ACCESS -->
+    <section class="section" id="access" aria-labelledby="access-title">
+      <div class="container">
+        <h2 class="section-title" id="access-title">Access<span class="section-title__ja">店舗情報</span></h2>
+        <dl class="info-list">
+          <div class="info-list__row"><dt>住所</dt><dd>〒000-0000<br>架空県もり市みどり町1-2-3 モリビル1階</dd></div>
+          <div class="info-list__row"><dt>最寄り駅</dt><dd>みどり台駅 東口から徒歩5分</dd></div>
+          <div class="info-list__row"><dt>営業時間</dt><dd>8:00〜18:00（ラストオーダー 17:30）</dd></div>
+          <div class="info-list__row"><dt>定休日</dt><dd>毎週水曜日、第3木曜日</dd></div>
+          <div class="info-list__row"><dt>席数</dt><dd>20席（テラス席 4席）</dd></div>
+        </dl>
+        <p class="section-note">※ mori coffee は架空の店舗です。掲載の住所・駅名・営業時間はすべて架空のものです。</p>
+      </div>
+    </section>
+
+    <!-- ⑧ CONTACT -->
+    <section class="section section--beige" id="contact" aria-labelledby="contact-title">
+      <div class="container container--narrow">
+        <h2 class="section-title" id="contact-title">Contact<span class="section-title__ja">お問い合わせ</span></h2>
+        <p class="notice" role="note">このフォームは見た目のデモです。バックエンドを実装するまで、入力内容はメールとして送信されません。</p>
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="form__field">
+            <label class="form__label" for="name">お名前</label>
+            <input class="form__input" type="text" id="name" name="name" autocomplete="name" required>
+            <p class="form__error" id="name-error" hidden>お名前を入力してください。</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="email">メールアドレス</label>
+            <input class="form__input" type="email" id="email" name="email" autocomplete="email" required>
+            <p class="form__error" id="email-error" hidden>メールアドレスを正しい形式で入力してください。</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="message">お問い合わせ内容</label>
+            <textarea class="form__input form__textarea" id="message" name="message" rows="6" required></textarea>
+            <p class="form__error" id="message-error" hidden>お問い合わせ内容を入力してください。</p>
+          </div>
+          <button class="button button--dark" type="submit">内容を確認する</button>
+          <p class="form__result" id="form-result" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ⑨ フッター -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="logo logo--footer">mori coffee</p>
+        <p class="site-footer__hours">営業時間 8:00〜18:00<br>定休日 水曜日、第3木曜日</p>
+      </div>
+      <nav aria-label="フッターメニュー">
+        <ul class="site-footer__nav">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#access">ACCESS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="site-footer__copy"><small>&copy; 2026 mori coffee（架空のカフェ・ポートフォリオ作品）</small></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
